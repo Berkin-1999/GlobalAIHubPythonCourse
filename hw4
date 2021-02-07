@@ -1,0 +1,32 @@
+class Animal:
+    place = ''
+    action = ''
+    def __init__(self, name, gender, breed):
+        self.kind = self.__class__.__name__
+        self.name = name
+        self.gender = gender
+        self.breed = breed
+    def speak(self, sound):
+        self.sound = sound
+        print("{} just did a {} {}".format(self.name, self.sound, self.action))
+    def getallinfo(self):
+        print("{} is a {} {} {}, sitting on the {}".format(self.name, self.gender, self.breed, self.kind, self.place))
+
+class Dog(Animal):
+    place = 'Ground'
+    action = 'woof'
+
+
+class Cat(Animal):
+    place = 'Ground'
+    action = 'meow'
+
+
+
+Mickey = Dog('Mickey', 'Male', 'Bulldog')
+Flora = Dog('Flora','Female','Pug')
+Tina = Cat('Tina','Female','Persian')
+Tina.getallinfo()
+Tina.speak('soft')
+Flora.getallinfo()
+Mickey.speak('loud')
