@@ -1,0 +1,45 @@
+class Employees():
+  def _init_(self, name, age):
+        self.name = name
+        self.age = age
+        self.language = []
+
+  def addLanguage(self,new_lang):
+        self.language.append(new_lang)
+
+class Managers(Employees):
+  def _init_(self, name, age):
+    Employees._init_(self, name, age)
+             
+Employee1 = Employees('Beril', 24)
+Employee1.addLanguage('Turkish')
+Employee1.addLanguage('English')
+Employee1.addLanguage('German')
+
+Employee2 = Employees('Berkin', 21)
+Employee2.addLanguage('Turkish')
+Employee2.addLanguage('English')
+
+Employee3 = Employees('Harry', 22)
+Employee3.addLanguage('Russian')
+Employee3.addLanguage('English')
+Employee3.addLanguage('German')
+Employee3.addLanguage('Spanish')
+
+Manager1 = Managers('Katarina', 26)
+Manager1.addLanguage('English')
+Manager1.addLanguage('Polish')
+
+Manager2 = Managers('Gülnur', 25)
+Manager2.addLanguage('Turkish')
+Manager2.addLanguage('English')
+Manager2.addLanguage('German')
+
+Manager3 = Managers('Hamit', 23)
+Manager3.addLanguage('Turkish')
+Manager3.addLanguage('English')
+Manager3.addLanguage('Spanish')
+
+mylist =(Employee1.language + Employee2.language + Employee3.language)
+mylist = list(dict.fromkeys(mylist))
+print('Employees can speak', mylist)
