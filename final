@@ -33,7 +33,7 @@ Man1.addLanguage('English')
 Man2 = Managers('Gülnur', 25)
 Man2.addLanguage('Turkish')
 Man2.addLanguage('English')
-Man2.addLanguage('German')
+Man2.addLanguage('Chinese')
 
 Man3 = Managers('Hamit', 27)
 Man3.addLanguage('Turkish')
