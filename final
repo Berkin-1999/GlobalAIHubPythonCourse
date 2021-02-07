@@ -16,19 +16,19 @@ Emp1.addLanguage('Turkish')
 Emp1.addLanguage('English')
 Emp1.addLanguage('German')
 
-Emp2 = Employees('Berkin', 29)
+Emp2 = Employees('Serdar', 29)
 Emp2.addLanguage('Turkish')
 Emp2.addLanguage('English')
 
 Emp3 = Employees('Harry', 22)
-Emp3.addLanguage('Russian')
 Emp3.addLanguage('English')
+Emp3.addLanguage('Russian')
 Emp3.addLanguage('German')
 Emp3.addLanguage('Spanish')
 
 Man1 = Managers('Katarina', 24)
-Man1.addLanguage('English')
 Man1.addLanguage('Russian')
+Man1.addLanguage('English')
 
 Man2 = Managers('Gülnur', 25)
 Man2.addLanguage('Turkish')
