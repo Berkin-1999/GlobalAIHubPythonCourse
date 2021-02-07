@@ -1,0 +1,11 @@
+num = list(range(int(input('Enter number: '))))
+
+even = num[::2]
+
+
+print('Even list:', even)
+
+
+print('Even:', sum(even))
+
+      
